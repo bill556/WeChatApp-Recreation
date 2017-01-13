@@ -1,0 +1,20 @@
+<import src="news-template.wxml" />
+<view class="container">
+  <loading hidden="{{loadingHidden}}">加载中...</loading>
+  <view class="title-tabs-bar-container">
+    <text data-index="0" bindtap="onTitleBarsClick" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 0 ? 'title-tabs-bar-tab-text-selected' : ''}}">科技</text>
+    <text data-index="1" bindtap="onTitleBarsClick" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 1 ? 'title-tabs-bar-tab-text-selected' : ''}}">汽车</text>
+    <text data-index="2" bindtap="onTitleBarsClick" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 2 ? 'title-tabs-bar-tab-text-selected' : ''}}">数码</text>
+  </view>
+  <swiper class="swiper-container" bindchange="onBindchange" current="{{curSelClassifyIndex}}">
+    <swiper-item>
+      <template is="newsList" data="{{newsData: newsData['tech']}}" />
+    </swiper-item>
+    <swiper-item>
+      <template is="newsList" data="{{newsData: newsData['car']}}" />
+    </swiper-item>
+    <swiper-item>
+      <template is="newsList" data="{{newsData: newsData['digital']}}" />
+    </swiper-item>
+  </swiper>
+</view>

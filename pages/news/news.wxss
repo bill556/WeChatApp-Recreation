@@ -1,0 +1,88 @@
+/*viewpager指示器*/
+
+.title-tabs-bar-container {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  background-color: #9c978b;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-tabs-bar-tab-text {
+  width: 150rpx;
+  font-size: 30rpx;
+  color: #fff;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  text-align: center;
+}
+
+.title-tabs-bar-tab-text-selected {
+  border-width: 2rpx;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 20rpx;
+}
+
+/*item布局*/
+
+.listWrap2 {
+  padding-left: 15rpx;
+  padding-top: 5rpx;
+  padding-right: 15rpx;
+}
+
+.listitem-navigator3 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18.75rpx 0rpx;
+  border-bottom: 1px solid rgb(237, 237, 237);
+  padding-right: 0rpx;
+}
+
+.wx-image_tBcdCT2 {
+  width: 80px;
+  height: 80px;
+}
+
+.wx-view_cPj0ok2 {
+  margin-left: 10px;
+  flex: 1 1 0%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.c-block {
+  display: block;
+}
+
+.c-ellipse {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.wx-text_TvHPc92 {
+  font-size: 16px;
+  -webkit-line-clamp: 2;
+}
+
+.wx-text_LS2Jup2 {
+  font-size: 13px;
+  color: #a1a1a1;
+}

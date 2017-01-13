@@ -1,0 +1,14 @@
+<template name="newsList">
+  <scroll-view scroll-y="true" bindscrolltolower="onBindscrolltolower" style="height: 100%; width: 100%; background-color: #FFF;">
+    <view class="listWrap2">
+      <navigator class="listitem-navigator3" hover-class="navigator-hover" wx:for="{{newsData}}" wx:for-item="NewInfo" url="../detail/detail?title={{NewInfo.title}}&url={{NewInfo.url}}">
+        <image class="wx-image_tBcdCT2" mode="aspectFill" src="{{NewInfo.imgsrc}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat;" />
+        <view class="wx-view_cPj0ok2">
+          <text class="c-block c-ellipse wx-text_TvHPc92">{{NewInfo.title}}</text>
+          <text class="c-block c-ellipse wx-text_LS2Jup2">{{NewInfo.digest}}</text>
+        </view>
+      </navigator>
+    </view>
+    <include src="../common/loadmore.wxml" />
+  </scroll-view>
+</template>

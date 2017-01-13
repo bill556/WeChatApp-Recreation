@@ -1,0 +1,35 @@
+<view class="container">
+  <loading hidden="{{loadingHidden}}" bindchange="loadingChange">加载中...</loading>
+  <scroll-view scroll-y="true" bindscrolltolower="onBindscrolltolower" style="height: 100%; background-color: #FFF;">
+    <view class="item-container" wx:for="{{girlData}}" wx:for-item="girlInfo">
+      <view class="c-minheight carditem01">
+        <view class="paddinghalfrem wx-view_QvvUkU">
+          <navigator class="wx-navigator_rv4BGW" hover-class="navigator-hover">
+            <image class="wx-image_tBcdCT" mode="aspectFill" src="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
+            <view class="wx-view_cPj0ok">
+              <text class="c-block wx-text_TvHPc9">{{girlInfo.who}}</text>
+              <text class="c-block wx-text_LS2Jup">{{girlInfo.year}}</text>
+            </view>
+          </navigator>
+        </view>
+        <navigator class="wx-navigator_PNd8QQ" hover-class="navigator-hover">
+          <image class="wx-image_BEjy38" mode="aspectFill" src="{{girlInfo.url}}" bindtap="onImageClick" id="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
+        </navigator>
+        <view class="paddinghalfrem wx-view_adF7Mw">
+          <view class="wx-view_2gazUr">
+            <view class="wx-view_DKe6UT">
+              <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a67f2e79e6ed8ae5bf46237d4f88a4e7_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat;" />
+              <text class="c-block wx-text_id0VJj">520</text>
+            </view>
+            <view class="wx-view_DKe6UT">
+              <image class="wx-image_6E2A1o" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat;" />
+              <text class="c-block wx-text_id0VJj">1314</text>
+            </view>
+          </view>
+          <text class="c-block wx-text_9Wn0Di">{{girlInfo.time}}</text>
+        </view>
+      </view>
+    </view>
+    <include src="../common/loadmore.wxml" />
+  </scroll-view>
+</view>

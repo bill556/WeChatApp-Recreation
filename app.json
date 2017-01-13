@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/news/news",
+    "pages/recommend/recommend",
+    "pages/girl/girl",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/showpic/showpic",
+    "pages/submitgank/submitgank",
+    "pages/collection/collection"
+  ],
+  "tabBar": {
+    "backgroundColor": "#9C978B",
+    "color": "#000",
+    "selectedColor": "#FFF",
+    "list": [
+      {
+        "iconPath": "image/tabicon/ic_home_tab_gank.png",
+        "selectedIconPath": "image/tabicon/ic_home_tab_gank.png",
+        "pagePath": "pages/news/news",
+        "text": "新闻"
+      }, 
+      {
+        "iconPath": "image/tabicon/ic_home_tab_rec.png",
+        "selectedIconPath": "image/tabicon/ic_home_tab_rec.png",
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐"
+      },
+      {
+        "iconPath": "image/tabicon/ic_home_tab_girl.png",
+        "selectedIconPath": "image/tabicon/ic_home_tab_girl.png",
+        "pagePath": "pages/girl/girl",
+        "text": "妹纸"
+      },
+      {
+        "iconPath": "image/tabicon/ic_home_tab_collect.png",
+        "selectedIconPath": "image/tabicon/ic_home_tab_collect.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 10000
+  },
+  "window":{
+    "navigationBarBackgroundColor": "#9C978B",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "干货集中营"
+  }
+}
