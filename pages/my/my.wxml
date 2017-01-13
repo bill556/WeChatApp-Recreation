@@ -12,6 +12,13 @@
       </view>
     </navigator>
 
+    <navigator url="../mygallery/mygallery">
+      <view class="item-container" style="margin-top: 2rpx;">
+        <image class="item-icon" src="../../image/ic_submit.png" />
+        <text class="item-label">我的图库</text>
+      </view>
+    </navigator>
+
     <navigator url="../submitgank/submitgank?name={{userInfo.nickName}}">
       <view class="item-container" style="margin-top: 2rpx;">
         <image class="item-icon" src="../../image/ic_submit.png" />

@@ -1,9 +1,5 @@
 /**
  * 页面详情 todo：目前只是临时版本，微信那边还有很多组件没有提供
- * author：iWgang
- * email:  iwgang@163.com
- * time:   2016-10-12
- * github：https://github.com/iwgang/GankCamp-WechatAPP
  */
 var collections;
 Page({

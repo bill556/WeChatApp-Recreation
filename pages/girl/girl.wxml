@@ -4,17 +4,13 @@
     <view class="item-container" wx:for="{{girlData}}" wx:for-item="girlInfo">
       <view class="c-minheight carditem01">
         <view class="paddinghalfrem wx-view_QvvUkU">
-          <navigator class="wx-navigator_rv4BGW" hover-class="navigator-hover">
-            <image class="wx-image_tBcdCT" mode="aspectFill" src="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
-            <view class="wx-view_cPj0ok">
-              <text class="c-block wx-text_TvHPc9">{{girlInfo.who}}</text>
-              <text class="c-block wx-text_LS2Jup">{{girlInfo.year}}</text>
-            </view>
-          </navigator>
+          <image class="wx-image_tBcdCT" mode="aspectFill" src="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
+          <view class="wx-view_cPj0ok">
+            <text class="c-block wx-text_TvHPc9">{{girlInfo.who}}</text>
+            <text class="c-block wx-text_LS2Jup">{{girlInfo.year}}</text>
+          </view>
         </view>
-        <navigator class="wx-navigator_PNd8QQ" hover-class="navigator-hover">
-          <image class="wx-image_BEjy38" mode="aspectFill" src="{{girlInfo.url}}" bindtap="onImageClick" id="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
-        </navigator>
+        <image class="wx-image_BEjy38" mode="aspectFill" src="{{girlInfo.url}}" bindtap="onImageClick" id="{{girlInfo.url}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; " />
         <view class="paddinghalfrem wx-view_adF7Mw">
           <view class="wx-view_2gazUr">
             <view class="wx-view_DKe6UT">

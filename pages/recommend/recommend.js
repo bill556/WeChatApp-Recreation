@@ -1,9 +1,5 @@
 /**
  * 每日推荐
- * author：iWgang
- * email:  iwgang@163.com
- * time:   2016-10-12
- * github：https://github.com/iwgang/GankCamp-WechatAPP
  */
 Page({
   data:{

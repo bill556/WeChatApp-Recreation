@@ -7,7 +7,8 @@
     "pages/detail/detail",
     "pages/showpic/showpic",
     "pages/submitgank/submitgank",
-    "pages/collection/collection"
+    "pages/collection/collection",
+    "pages/mygallery/mygallery"
   ],
   "tabBar": {
     "backgroundColor": "#9C978B",
