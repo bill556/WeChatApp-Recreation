@@ -2,6 +2,7 @@
  * 妹纸图片列表
  */
 var pageNo = 1
+var app = getApp()
 
 Page({
   data: {
@@ -30,7 +31,7 @@ Page({
   // 获取 gank 的妹纸数据
   loadGankGirlData: function (callback) {
     wx.request({
-      url: 'http://gank.io/api/data/福利/10/' + pageNo,
+      url: app.globalData.baseGankURL + pageNo,
       header: {
         'Content-Type': 'application/json'
       },
