@@ -64,5 +64,22 @@ Page({
       desc: 'From Gank.IO',
       path: '/page/user?id=123'
     }
+  },
+  //下拉刷新 （issue：触发不灵敏，可能是官方BUG，可能是调试状态下不行, android设备列表不展示，iphone可以）
+  onPullDownRefresh: function () {
+    console.log("下拉刷新")
+    wx.showToast({
+      title: '正在刷新ing...',
+      icon: 'loading',
+      duration: 10000
+    })
+    pageNo = 0
+    this.loadGankGirlData(results => {
+      pageNo++
+      this.setData({
+        girlData: results
+      })
+      wx.hideToast()
+    })
   }
 })

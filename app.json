@@ -49,6 +49,7 @@
     "navigationBarBackgroundColor": "#9C978B",
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "干货集中营"
+    "navigationBarTitleText": "干货集中营",
+    "enablePullDownRefresh": true
   }
 }
