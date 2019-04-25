@@ -2,12 +2,11 @@
   "usingComponents": {
     "van-button": "../../components/van/button/index"
   },
-  "pages": [
-    "pages/my/my",
-    
+  "pages": [    
     "pages/news/news",
     "pages/recommend/recommend",
     "pages/girl/girl",
+    "pages/my/my",
     "pages/detail/detail",
     "pages/showpic/showpic"
   ],
