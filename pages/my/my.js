@@ -3,19 +3,23 @@
  */
 Page({
   data: {
-    userInfo: {}
+    userInfo: {
+    }
   },
   onLoad: function () {
-    wx.login({
+    wx.getUserInfo({
       success: res => {
-        wx.getUserInfo({
-          success: res => {
-            this.setData({
-              userInfo: res.userInfo
-            })
-          }
+        this.setData({
+          userInfo: res.userInfo,
         })
       }
     })
-  }
+  },
+  onGotUserInfo: function (data) {
+    if (data.detail.userInfo) {
+      this.setData({
+        userInfo: data.detail.userInfo,
+      })
+    }
+  },
 })

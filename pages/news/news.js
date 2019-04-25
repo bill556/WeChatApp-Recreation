@@ -32,7 +32,6 @@ Page({
             duration: 2000
           })
         }
-        console.log(classifyName)
         callback(data[classifyName]);
       }
     })

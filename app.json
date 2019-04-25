@@ -1,14 +1,15 @@
 {
+  "usingComponents": {
+    "van-button": "../../components/van/button/index"
+  },
   "pages": [
+    "pages/my/my",
+    
     "pages/news/news",
     "pages/recommend/recommend",
     "pages/girl/girl",
-    "pages/my/my",
     "pages/detail/detail",
-    "pages/showpic/showpic",
-    "pages/submitgank/submitgank",
-    "pages/collection/collection",
-    "pages/mygallery/mygallery"
+    "pages/showpic/showpic"
   ],
   "tabBar": {
     "backgroundColor": "#9C978B",

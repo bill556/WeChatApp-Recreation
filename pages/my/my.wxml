@@ -1,29 +1,9 @@
 <view class="container">
   <scroll-view scroll-y="true" style="height: 100%;">
     <view class="header-container">
+      <van-button round class="header-login" wx:if="{{userInfo.avatarUrl == null ? true : false}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点击登录</van-button>
       <image class="header-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="header-nickname">{{userInfo.nickName}}</text>
     </view>
-
-    <navigator url="../collection/collection">
-      <view class="item-container" style="margin-top: 30rpx;">
-        <image class="item-icon" src="../../image/ic_collection.png" />
-        <text class="item-label">我的收藏</text>
-      </view>
-    </navigator>
-
-    <navigator url="../mygallery/mygallery">
-      <view class="item-container" style="margin-top: 2rpx;">
-        <image class="item-icon" src="../../image/ic_submit.png" />
-        <text class="item-label">我的图库</text>
-      </view>
-    </navigator>
-
-    <navigator url="../submitgank/submitgank?name={{userInfo.nickName}}">
-      <view class="item-container" style="margin-top: 2rpx;">
-        <image class="item-icon" src="../../image/ic_submit.png" />
-        <text class="item-label">提交干货</text>
-      </view>
-    </navigator>
   </scroll-view>
 </view>
