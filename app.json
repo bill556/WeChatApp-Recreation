@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/news/news",
     "pages/recommend/recommend",
     "pages/girl/girl",
@@ -20,7 +20,7 @@
         "selectedIconPath": "image/tabicon/ic_home_tab_gank.png",
         "pagePath": "pages/news/news",
         "text": "新闻"
-      }, 
+      },
       {
         "iconPath": "image/tabicon/ic_home_tab_rec.png",
         "selectedIconPath": "image/tabicon/ic_home_tab_rec.png",
@@ -45,11 +45,12 @@
     "request": 30000,
     "connectSocket": 10000
   },
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#9C978B",
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "干货集中营",
     "enablePullDownRefresh": true
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

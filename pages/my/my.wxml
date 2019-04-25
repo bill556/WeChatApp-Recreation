@@ -4,7 +4,7 @@
       <image class="header-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="header-nickname">{{userInfo.nickName}}</text>
     </view>
-    
+
     <navigator url="../collection/collection">
       <view class="item-container" style="margin-top: 30rpx;">
         <image class="item-icon" src="../../image/ic_collection.png" />
